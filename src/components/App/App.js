@@ -1,11 +1,13 @@
-import './App.css';
-import List from '../List/List'
+import "./App.css";
+import List from "../List/List";
+import Navbar from "../Header/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <List/>
-    </div>
+    <>
+      <Navbar />
+      {/*<List />*/}
+    </>
   );
 }
 

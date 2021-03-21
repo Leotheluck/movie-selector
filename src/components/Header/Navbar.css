@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--green);
+  position: relative;
+}
+
+nav {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .nav-mode {
+  width: 4%;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.container .nav-language {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav-brand img {
+  width: 18%;
+  cursor: pointer;
+}
+
+.nav-login a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+}

@@ -1,1 +1,34 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  list-style: none;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: var(--white);
+}
+
+:root {
+  --greenDark: #13ad87;
+  --green: #16c79a;
+  --white: #faf9f9;
+  --black: #141414;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input {
+  outline: none;
+}
 
