@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <div className="container">
+        <div className="nav-container">
           <img
             src={mode ? Clair : Sombre}
             alt="Mode clair"
@@ -29,7 +29,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="nav-login">
-          <a href="#">Se connection</a>
+          <a href="#">Se connecter</a>
         </div>
       </nav>
     </header>
