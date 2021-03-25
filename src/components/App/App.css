@@ -20,7 +20,9 @@ body {
   --greenDark: #13ad87;
   --green: #16c79a;
   --white: #faf9f9;
-  --black: #141414;
+  --black: #1a1a1a;
+  --gray: #e5e5e5;
+  --grayDark: #cccccc;
 }
 
 a,

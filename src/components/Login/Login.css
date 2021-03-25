@@ -1,0 +1,109 @@
+.page-profile {
+  /*background-color: red;*/
+  height: 76vh;
+  padding-top: 100px;
+}
+.main-content {
+  /*background-color: blue;*/
+  padding: 20px;
+}
+.wrapper {
+  /*background-color: blueviolet;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.profile-h1 {
+  margin: 10px 0 50px 0;
+  position: relative;
+}
+.profile-h1 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.profile-h1 h1:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 150px;
+  height: 2px;
+  background-color: var(--green);
+}
+
+.form-profile {
+  /*background-color: indianred;*/
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.profile-user,
+.profile-email,
+.profile-mdp,
+.profile-confirm,
+.profile-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem !important;
+}
+.profile-user label,
+.profile-email label,
+.profile-mdp label,
+.profile-confirm label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0.5rem !important;
+}
+.profile-user input,
+.profile-mdp input,
+.profile-email input,
+.profile-confirm input {
+  border-radius: 3px;
+  border: 2px solid var(--grayDark);
+  background-color: var(--gray);
+  padding: 0.5rem 1rem;
+}
+
+.form-profile input:focus {
+  border-color: var(--greenDark);
+  background-color: var(--white);
+}
+.profile-btn {
+  margin-bottom: 15px;
+}
+.profile-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 4px;
+  padding: 12px 0;
+  transition: 300ms ease;
+  cursor: pointer;
+}
+.profile-btn button:hover {
+  background-color: var(--greenDark);
+}
+.profile-other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.profile-other a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.profile-other a:hover {
+  opacity: 0.7;
+}

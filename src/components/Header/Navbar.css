@@ -22,7 +22,7 @@ nav {
   align-items: center;
 }
 .nav-container .nav-mode {
-  width: 4%;
+  width: 1.5rem;
   margin-right: 40px;
   cursor: pointer;
 }
@@ -34,7 +34,7 @@ nav {
 }
 
 .nav-brand img {
-  width: 18%;
+  width: 5rem;
   cursor: pointer;
 }
 
