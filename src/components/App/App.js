@@ -5,7 +5,6 @@ import Footer from "../Footer/Footer";
 import List from "../List/List";
 import Login from "../Login/Login";
 import Signup from "../Signup/Signup.js";
-import Home from "../Home/Home";
 
 function App() {
   return (
@@ -13,9 +12,8 @@ function App() {
       <Navbar />
       <Switch>
         {/*<Route path="/" exact component={List} />*/}
-        <Route path="/" exact component={Home} />
         <Route path="/connection" exact component={Login} />
-        <Route path="/inscription" exact component={Signup} />
+        <Route path="/inscription" component={Signup} />
       </Switch>
       <Footer />
     </Router>

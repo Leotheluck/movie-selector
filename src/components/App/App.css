@@ -13,17 +13,16 @@
 
 body {
   font-family: Montserrat, sans-serif;
-  background-color: var(--blackDark);
+  background-color: var(--white);
 }
 
 :root {
-  --white: #f5f5f5;
-  --green: #16c79a;
   --greenDark: #13ad87;
-  --black: #18181b;
-  --blackDark: #0e0e10;
-  --gray: #c5c5c6;
-  --gray2: #464649;
+  --green: #16c79a;
+  --white: #faf9f9;
+  --black: #1a1a1a;
+  --gray: #e5e5e5;
+  --grayDark: #cccccc;
 }
 
 a,
