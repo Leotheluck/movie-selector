@@ -6,11 +6,13 @@ const genres = []
 let fetchGenres = ''
 let fetchRuntime = ''
 let fetchProvider = ''
+let fetchSearcher = ''
 
 function List() {
 
     const [movies,setMovies] = useState([])
     const [searchDetails, setSearchDetails] = useState('') 
+    const [discoverElse, setDiscoverElse] = useState('discover')
 
     for (let i = 0; i < genres.length; i++) {
         if (genres[i] == undefined) {
@@ -94,17 +96,34 @@ function List() {
         composeLink()
     }
 
+    const addSearcher = (event) => {
+        if (event.target.value == "") {
+            fetchSearcher = ""
+            setDiscoverElse("discover")
+        } else {
+            fetchSearcher = "&query=" + event.target.value
+            setDiscoverElse("search")
+        }
+
+        console.log(fetchSearcher)
+
+        composeLink()
+    }
+
     const composeLink = () => {
         console.log(movies.results)
-        setSearchDetails(fetchGenres + fetchRuntime + fetchProvider)
+        if (fetchSearcher == '') {
+            setSearchDetails(fetchGenres + fetchRuntime + fetchProvider)
+        } else {
+            setSearchDetails(fetchSearcher)
+        }
         console.log(movies.results)
         console.log(searchDetails)
     }
 
     const fetchMovies = () => {
-        const url = `https://api.themoviedb.org/3/discover/movie?api_key=f40b8233db44ef498baa757dacc5b165&language=fr${searchDetails}`
-
-        fetch(url)
+        const url = `https://api.themoviedb.org/3/${discoverElse}/movie?api_key=f40b8233db44ef498baa757dacc5b165&language=fr${searchDetails}`   
+            fetch(url)
             .then(response => response.json())
             .then(json => setMovies(json))
     }
@@ -248,6 +267,17 @@ function List() {
                     <li className="boxtag">
                         <input className="boxtag-input" type="radio" id="disneyplus" name="provider" onChange={() => {addProvider("disneyplus")}}></input>
                         <label className="boxtag-label" for="disneyplus">Disney +</label>
+                    </li>
+                </ul>
+            </div>
+            <div className="providers-container">
+                <div className="providers-title-container">
+                    <h2 className="providers-title">Recherche</h2>
+                    <div className="providers-title-bar"></div>
+                </div>
+                <ul className="boxtags-container">
+                    <li className="searchbar">
+                        <input className="searchbar-input" placeholder="Rechercher..." type="text" onChange={(event) => {addSearcher(event)}}></input>
                     </li>
                 </ul>
             </div>

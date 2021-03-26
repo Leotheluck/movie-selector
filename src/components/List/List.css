@@ -228,6 +228,60 @@ body
                 10px 0 20px rgba(0, 255, 255, 0.43);
 }
 
+.searchbar
+{
+    margin: 0;
+    margin: 10px;
+    border-radius: 30px;
+    list-style: none;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar-input
+{
+    border: none;
+    outline: none;
+    width: 45vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 45px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background: #6D6D6D;
+    height: 35px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(191, 191, 191);
+    box-shadow: 1px 7px 25px -4px rgba(150, 142, 142, 0.43);
+    transition: .2s;
+    background-image: url("https://i.imgur.com/bkC5Gg0.png");
+    background-size: 2.8%;
+    background-position: left 12px center;
+    background-repeat: no-repeat;
+}
+
+::placeholder
+{
+    color: rgb(191, 191, 191);
+}
+
+.searchbar-input:focus
+{
+    color: rgb(201, 201, 201);
+    transform: scale(0.98);
+    box-shadow: 1px 7px 25px -4px rgba(150, 142, 142, 0.43),
+                inset 0 0 10px rgba(245, 245, 245, 0.1),
+                inset 5px 0 20px rgba(92, 248, 100, 0.1),
+                0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+
 /********
  Movie list
 ********/
@@ -250,10 +304,46 @@ body
 {
     width: 250px;
     height: 375px;
+    border: none;
+    background: #141414;
     overflow: hidden;
     border-radius: 20px;
     background-position: center;
     background-size: cover;
     margin-bottom: 20px;
     box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 1);
+    transition: .5s;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    opacity: 100%;
+    outline: none;
 }
+
+.movie-list .movie-card:hover
+{
+    transform: scale(0.98);
+    background-size: 112%;
+    transition: 1s;
+    opacity: 80%;
+}
+
+.movie-list .movie-card p 
+{
+    opacity: 0%;
+    transition: .5s;
+    color: #ffffff;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 25px;
+    text-shadow: 0px 3px 10px #000;
+}
+
+.movie-list .movie-card:hover p 
+{
+    opacity: 100%;
+    transition: 1s;
+}
+
