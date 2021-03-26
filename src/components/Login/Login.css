@@ -1,19 +1,19 @@
 .page-profile {
-  /*background-color: red;*/
   height: 76vh;
   padding-top: 100px;
 }
 .main-content {
-  /*background-color: blue;*/
   padding: 20px;
 }
 .wrapper {
-  /*background-color: blueviolet;*/
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1050px;
+  max-width: 550px;
   margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
 }
 
 .profile-h1 {
@@ -23,6 +23,7 @@
 .profile-h1 h1 {
   font-size: 2rem;
   font-weight: 700;
+  color: var(--white);
 }
 .profile-h1 h1:before {
   content: "";
@@ -36,7 +37,6 @@
 }
 
 .form-profile {
-  /*background-color: indianred;*/
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -56,20 +56,21 @@
 .profile-confirm label {
   font-size: 14px;
   font-weight: 600;
+  color: var(--white);
   margin-bottom: 0.5rem !important;
 }
 .profile-user input,
 .profile-mdp input,
 .profile-email input,
 .profile-confirm input {
-  border-radius: 3px;
-  border: 2px solid var(--grayDark);
+  border-radius: 5px;
+  border: 2px solid var(--gray);
   background-color: var(--gray);
   padding: 0.5rem 1rem;
 }
 
 .form-profile input:focus {
-  border-color: var(--greenDark);
+  border: 2px solid var(--greenDark);
   background-color: var(--white);
 }
 .profile-btn {
@@ -82,14 +83,14 @@
   font-size: 15px;
   font-weight: 600;
   color: var(--white);
-  background-color: var(--green);
-  border-radius: 4px;
+  background-color: var(--greenDark);
+  border-radius: 5px;
   padding: 12px 0;
-  transition: 300ms ease;
+  transition: all 300ms ease;
   cursor: pointer;
 }
 .profile-btn button:hover {
-  background-color: var(--greenDark);
+  filter: brightness(1.1);
 }
 .profile-other {
   display: flex;
@@ -100,10 +101,11 @@
 .profile-other a {
   font-size: 16px;
   font-weight: 500;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 12px;
+  transition: all 300ms ease;
   cursor: pointer;
 }
 .profile-other a:hover {
-  opacity: 0.7;
+  color: var(--green);
 }
