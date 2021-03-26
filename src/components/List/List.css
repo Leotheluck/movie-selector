@@ -282,32 +282,24 @@ body
 }
 
 
-/* ul.ks-cboxtags {
-    list-style: none;
-    padding: 20px;
+/********
+ Movie list
+********/
+
+.movie-list-container
+{
+    background: #141414;
 }
 
-ul.ks-cboxtags li{
-  display: flex;
-  justify-content: center;
+.movie-list
+{
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-ul.ks-cboxtags li label{
-    background-color: #6D6D6D;
-    border: 2px solid #000000;
-    color: #ffffff;
-    border-radius: 25px;
-    margin: 3px 0px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: all .2s;
-}
-
-<<<<<<< HEAD
 .movie-list .movie-card
 {
     width: 250px;
@@ -354,44 +346,3 @@ ul.ks-cboxtags li label{
     opacity: 100%;
     transition: 1s;
 }
-=======
-ul.ks-cboxtags li label {
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-ul.ks-cboxtags li label::before {
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    font-family: "Inter", sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 20px;
-    content: "+";
-    transition: transform .3s ease-in-out;
-}
-
-ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
-    content: "✓";
-    transition: .3s ease-in-out;
-}
-
-ul.ks-cboxtags li input[type="checkbox"]:checked + label {
-    border: 2px solid #1bdbf8;
-    background-color: #12bbd4;
-    color: #fff;
-    transition: all .2s;
-}
-
-ul.ks-cboxtags li input[type="checkbox"] {
-  display: absolute;
-}
-ul.ks-cboxtags li input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-}
-ul.ks-cboxtags li input[type="checkbox"]:focus + label {
-  border: 2px solid #e9a1ff;
-} */
->>>>>>> parent of 2ee90ab (Merge branch 'main' of https://github.com/Leotheluck/movie-selector into main)
