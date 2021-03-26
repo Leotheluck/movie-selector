@@ -5,8 +5,12 @@ import './List.css'
 const genres = []
 let fetchGenres = ''
 let fetchRuntime = ''
+<<<<<<< HEAD
 let fetchProvider = ''
 let fetchSearcher = ''
+=======
+let totalLink = ''
+>>>>>>> parent of 2ee90ab (Merge branch 'main' of https://github.com/Leotheluck/movie-selector into main)
 
 function List() {
 
@@ -80,6 +84,7 @@ function List() {
         composeLink()
     }
 
+<<<<<<< HEAD
     const addProvider = (watchProvider) => {
         if (watchProvider == "none") {
             fetchProvider = ""
@@ -117,6 +122,12 @@ function List() {
         } else {
             setSearchDetails(fetchSearcher)
         }
+=======
+    const composeLink = () => {
+        console.log(movies.results)
+        totalLink = fetchGenres + fetchRuntime
+        setSearchDetails(fetchGenres + fetchRuntime)
+>>>>>>> parent of 2ee90ab (Merge branch 'main' of https://github.com/Leotheluck/movie-selector into main)
         console.log(movies.results)
         console.log(searchDetails)
     }
@@ -253,23 +264,24 @@ function List() {
                 </div>
                 <ul className="boxtags-container">
                     <li className="boxtag">
-                        <input className="boxtag-input" type="radio" id="noProvider" name="provider" onChange={() => {addProvider("none")}}></input>
-                        <label className="boxtag-label" for="noProvider">Peu importe</label>
+                        <input className="boxtag-input" type="radio" id="none" name="length" onChange={(event) => {addGenre(28, event)}}></input>
+                        <label className="boxtag-label" for="none">Peu importe</label>
                     </li>
                     <li className="boxtag">
-                        <input className="boxtag-input" type="radio" id="netflix" name="provider" onChange={() => {addProvider("netflix")}}></input>
-                        <label className="boxtag-label" for="netflix">Netflix</label>
+                        <input className="boxtag-input" type="radio" id="short" name="length" onChange={(event) => {addGenre(28, event)}}></input>
+                        <label className="boxtag-label" for="short">Netflix</label>
                     </li>
                     <li className="boxtag">
-                        <input className="boxtag-input" type="radio" id="amazonprime" name="provider" onChange={() => {addProvider("amazonprime")}}></input>
-                        <label className="boxtag-label" for="amazonprime">Amazon Prime Video</label>
+                        <input className="boxtag-input" type="radio" id="classic" name="length" onChange={(event) => {addGenre(12, event)}}></input>
+                        <label className="boxtag-label" for="classic">Amazon Prime Video</label>
                     </li>
                     <li className="boxtag">
-                        <input className="boxtag-input" type="radio" id="disneyplus" name="provider" onChange={() => {addProvider("disneyplus")}}></input>
-                        <label className="boxtag-label" for="disneyplus">Disney +</label>
+                        <input className="boxtag-input" type="radio" id="long" name="length" onChange={(event) => {addGenre(12, event)}}></input>
+                        <label className="boxtag-label" for="long">Disney +</label>
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
             <div className="providers-container">
                 <div className="providers-title-container">
                     <h2 className="providers-title">Recherche</h2>
@@ -291,6 +303,16 @@ function List() {
                             : console.log("Loading movies...")
                     }
                 </div>
+=======
+            <div>
+                {
+                    movies.results
+                        ? movies.results.map(movie => {
+                            return <Movie movie={movie} key={movie.id}/>
+                            })
+                        : console.log("Loading movies...")
+                }
+>>>>>>> parent of 2ee90ab (Merge branch 'main' of https://github.com/Leotheluck/movie-selector into main)
             </div>
         </div>
     )

@@ -9,6 +9,7 @@ import close from '../close.png';
 function Movie(props) {
     const posterPath = "https://image.tmdb.org/t/p/w500"+props.movie.poster_path
 
+<<<<<<< HEAD
     let divStyle = {
         backgroundImage: 'url(' + posterPath + ')'
     }
@@ -39,6 +40,12 @@ function Movie(props) {
                 }
                 </Modal>
             }
+=======
+    return (
+        <div>
+            {props.movie.title}
+            <img src={posterPath}></img>
+>>>>>>> parent of 2ee90ab (Merge branch 'main' of https://github.com/Leotheluck/movie-selector into main)
         </div>
     );
 }
