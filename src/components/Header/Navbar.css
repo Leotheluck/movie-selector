@@ -1,7 +1,7 @@
 header {
   width: 100%;
   height: 80px;
-  background-color: var(--green);
+  background-color: var(--black);
   position: relative;
 }
 
@@ -18,31 +18,70 @@ nav {
 
 .nav-container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
-.nav-container .nav-mode {
-  width: 1.5rem;
-  margin-right: 40px;
+.nav-img {
+  padding: 10px;
+}
+.nav-mode {
+  width: 3.1vh;
+  transform: translateY(3px);
+  padding: 12px 12px;
+  border-radius: 5px;
+  margin-right: 20px;
   cursor: pointer;
 }
-.nav-container .nav-language {
-  font-size: 16px;
-  font-weight: 500;
+.nav-mode:hover {
+  background-color: var(--gray2);
+}
+
+.nav-language {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-language:hover {
+  background-color: var(--gray2);
+}
+.nav-language p {
+  font-size: 14px;
+  font-weight: 600;
   color: var(--white);
   cursor: pointer;
+}
+.nav-language img {
+  width: 13px;
+  height: 13px;
+  margin-left: 15px;
 }
 
 .nav-brand img {
-  width: 5rem;
+  width: 7vh;
   cursor: pointer;
+  transform: translateX(15px);
 }
 
-.nav-login a {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--white);
+.nav-login {
+  display: flex;
+  align-items: center;
 }
-.nav-login a:hover {
-  opacity: 0.6;
+.nav-login a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 5px;
+  padding: 12px 12px;
+  transition: all 300ms ease;
+}
+.nav-login a:not(:first-child) {
+  background-color: var(--greenDark);
+  margin-left: 20px;
+}
+.nav-login a:not(:last-child):hover {
+  background-color: var(--gray2);
+}
+.nav-login a:not(:first-child):hover {
+  filter: brightness(1.1);
 }

@@ -1,27 +1,38 @@
 import React, { useState } from "react";
 import Clair from "./img/Clair.svg";
-import Sombre from "./img/Sombre1.svg";
-import Logo from "./img/Logo.jpg";
+import Sombre from "./img/Sombre.svg";
+import Logo from "./img/Logo.png";
+import ArrowDown from "./img/ArrowDown.png";
+import ArrowUp from "./img/ArrowUp.png";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [mode, setMode] = useState(false);
+  const [lang, setLang] = useState(false);
 
   const handleMode = () => {
     setMode(!mode);
+  };
+  const handleLang = () => {
+    setLang(!lang);
   };
 
   return (
     <header>
       <nav className="navbar">
         <div className="nav-container">
-          <img
-            src={mode ? Clair : Sombre}
-            alt="Mode clair"
-            onClick={handleMode}
-            className="nav-mode"
-          />
-          <p className="nav-language">Fr ▼</p>
+          <div className="nav-img">
+            <img
+              src={mode ? Clair : Sombre}
+              alt="Mode clair"
+              onClick={handleMode}
+              className="nav-mode"
+            />
+          </div>
+          <div className="nav-language" onClick={handleLang}>
+            <p>FR</p>
+            <img src={lang ? ArrowDown : ArrowUp} alt="arrow" />
+          </div>
         </div>
         <div className="nav-brand">
           <a href="/">
@@ -29,7 +40,8 @@ const Navbar = () => {
           </a>
         </div>
         <div className="nav-login">
-          <a href="/connection">Se connecter</a>
+          <a href="/connection">Connection</a>
+          <a href="/inscription">Inscription</a>
         </div>
       </nav>
     </header>
