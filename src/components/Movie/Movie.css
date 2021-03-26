@@ -1,0 +1,79 @@
+/* .exit{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.exit button{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: red;
+} */
+/* .exit{
+  position: relative;
+} */
+.exitbis{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  left: 0;
+  top: 0;
+}
+.exit button{
+  position: fixed;
+  right: 17.5vw;
+  top: 4vw;
+  z-index: 1;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.exit img{
+  width: 1vw;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+.exit img:hover{
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: .2s;
+}
+
+@media all and (max-width: 1200px){
+  .exit button{
+    right: 18vw;
+    top: 3vw;
+  }
+}
+
+@media all and (max-width: 1024px){
+  .exit button{
+    right: 18vw;
+    top: 3vw;
+  }
+}
+
+@media all and (max-width: 768px){
+  .exit button{
+    right: 20vw;
+    top: 5vw;
+  }
+  .exit img{
+    width: 2vw;
+    margin-top: 2vw;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 480px){
+  .exit button{
+    right: 22vw;
+    top: 7vw;
+  }
+  .exit img{
+    width: 3vw;
+    margin-top: 3vw;
+    cursor: pointer;
+  }
+}
