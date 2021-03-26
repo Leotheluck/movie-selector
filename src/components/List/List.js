@@ -11,7 +11,7 @@ let fetchSearcher = ''
 function List() {
 
     const [movies,setMovies] = useState([])
-    const [searchDetails, setSearchDetails] = useState('') 
+    const [searchDetails, setSearchDetails] = useState('')
     const [discoverElse, setDiscoverElse] = useState('discover')
 
     for (let i = 0; i < genres.length; i++) {

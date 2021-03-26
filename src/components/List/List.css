@@ -8,6 +8,7 @@
 body
 {
     margin: 0;
+    overflow-x: hidden;
 }
 
 .genre-container
@@ -227,7 +228,6 @@ body
                 -10px 0 20px rgba(92, 248, 100, 0.43),
                 10px 0 20px rgba(0, 255, 255, 0.43);
 }
-
 .searchbar
 {
     margin: 0;
@@ -304,9 +304,9 @@ body
 {
     width: 250px;
     height: 375px;
+    overflow: hidden;
     border: none;
     background: #141414;
-    overflow: hidden;
     border-radius: 20px;
     background-position: center;
     background-size: cover;
@@ -346,4 +346,3 @@ body
     opacity: 100%;
     transition: 1s;
 }
-
