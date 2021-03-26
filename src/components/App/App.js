@@ -5,13 +5,11 @@ import Footer from "../Footer/Footer";
 import List from "../List/List";
 import Login from "../Login/Login";
 import Signup from "../Signup/Signup";
-import Sidebar from "../Sidebar/Sidebar";
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Sidebar/>
       <Switch>
         <Route path="/" exact component={List} />
         <Route path="/login" exact component={Login} />

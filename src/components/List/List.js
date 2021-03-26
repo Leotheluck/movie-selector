@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Movie from '../Movie/Movie';
 import MovieRandomizer from '../MovieRandomizer/MovieRandomizer';
 import './List.css'
+import Sidebar from "../Sidebar/Sidebar";
 const genres = []
 let fetchGenres = ''
 let fetchRuntime = ''
@@ -139,6 +140,7 @@ function List() {
 
     return(
         <div>
+            <Sidebar/>
             <div className="genre-container">
                 <div className="genre-title-container">
                     <h2 className="genre-title">Genres</h2>
