@@ -8,9 +8,10 @@ function Movie(props) {
     }
 
     return (
-        <button className="movie-card" style={divStyle}>
-            <p className="movie-card-title">{props.movie.vote_average / 2}/5</p>
-        </button>
+        <div className="movie-card" style={divStyle}>
+            {/* {props.movie.title} */}
+            {/* <img src={posterPath}></img> */}
+        </div>
     );
 }
 
