@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
-import Movie from '../Movie/Movie'
+import Movie from '../Movie/Movie';
+import MovieRandomizer from '../MovieRandomizer/MovieRandomizer';
 import './List.css'
 const genres = []
 let fetchGenres = ''
@@ -278,6 +279,7 @@ function List() {
                 <ul className="boxtags-container">
                     <li className="searchbar">
                         <input className="searchbar-input" placeholder="Rechercher..." type="text" onChange={(event) => {addSearcher(event)}}></input>
+                        <MovieRandomizer movies={movies}/>
                     </li>
                 </ul>
             </div>

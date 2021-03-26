@@ -19,10 +19,10 @@ const Login = () => {
               <input type="password" className="pass" required />
             </div>
             <div className="profile-btn">
-              <button type="submit">Connection</button>
+              <button type="submit">Se connecter</button>
             </div>
             <div className="profile-other">
-              <a href="/inscription">Crée un compte</a>
+              <a href="/inscription">Créer un compte</a>
               <a href="/">Retour au site</a>
             </div>
           </form>

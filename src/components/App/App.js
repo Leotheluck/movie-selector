@@ -1,23 +1,24 @@
 import "./App.css";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import Navbar from "../Header/Navbar";
-// import Footer from "../Footer/Footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "../Header/Navbar";
+import Footer from "../Footer/Footer";
 import List from "../List/List";
-// import Login from "../Login/Login";
-// import Signup from "../Signup/Signup.js";
+import Login from "../Login/Login";
+import Signup from "../Signup/Signup";
+import Sidebar from "../Sidebar/Sidebar";
 
 function App() {
   return (
-    // <Router>
-    //   <Navbar />
-    //   <Switch>
-    //     {/*<Route path="/" exact component={List} />*/}
-    //     <Route path="/connection" exact component={Login} />
-    //     <Route path="/inscription" component={Signup} />
-    //   </Switch>
-    //   <Footer />
-    // </Router>
-    <List/>
+    <Router>
+      <Navbar />
+      <Sidebar/>
+      <Switch>
+        <Route path="/" exact component={List} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/inscription" component={Signup} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

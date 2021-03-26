@@ -29,7 +29,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="nav-login">
-          <a href="/connection">Se connecter</a>
+          <a href="/login">Se connecter</a>
         </div>
       </nav>
     </header>

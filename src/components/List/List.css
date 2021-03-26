@@ -232,12 +232,13 @@ body
 {
     margin: 0;
     margin: 10px;
-    border-radius: 30px;
     list-style: none;
     height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 60vw;
+    overflow: hidden;
 }
 
 .searchbar-input
@@ -345,4 +346,23 @@ body
 {
     opacity: 100%;
     transition: 1s;
+}
+
+.searchbar button.movie-randomizer 
+{
+    width: 75px;
+    height: 35px;
+    background: #16C79A;
+    background-image: url("https://i.imgur.com/4P2jeoK.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30%;
+    border-radius: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.searchbar button.movie-randomizer:hover
+{
+    transform: scale(0.95);
 }

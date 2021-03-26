@@ -2,7 +2,7 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <section className="page-profile">
+    <section className="page-profile-1">
       <div className="main-content">
         <div className="wrapper">
           <div className="profile-h1">

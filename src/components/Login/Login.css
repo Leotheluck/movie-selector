@@ -1,10 +1,15 @@
 .page-profile {
-  /*background-color: red;*/
+  background-color: var(--black);
   height: 76vh;
-  padding-top: 100px;
+  padding: 5vh 0 20vh 0;
+}
+.page-profile-1 {
+  background-color: var(--black);
+  height: 76vh;
+  padding: 5vh 0 90vh 0;
 }
 .main-content {
-  /*background-color: blue;*/
+  /* background-color: var(--black); */
   padding: 20px;
 }
 .wrapper {
@@ -23,6 +28,7 @@
 .profile-h1 h1 {
   font-size: 2rem;
   font-weight: 700;
+  color: var(--white);
 }
 .profile-h1 h1:before {
   content: "";
@@ -57,6 +63,7 @@
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0.5rem !important;
+  color: var(--white);
 }
 .profile-user input,
 .profile-mdp input,
@@ -100,7 +107,7 @@
 .profile-other a {
   font-size: 16px;
   font-weight: 500;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 12px;
   cursor: pointer;
 }
